@@ -1,0 +1,234 @@
+{
+  "snapshot": {
+    "created": "2025-02-06T00:48:59.8",
+    "database": {
+      "productVersion": "2024.3.2.2",
+      "shortName": "intellijPsiClass",
+      "majorVersion": "0",
+      "minorVersion": "0",
+      "user": "Shift",
+      "productName": "IDEA Data Grid Snapshot",
+      "url": "jpab?generationContext=0656462c-5772-4afa-a99c-1ffd982f1971"
+    },
+    "metadata": {
+      "generationContext": {
+        "dbmsType": "postgresql"
+      }
+    },
+    "objects": {
+      "liquibase.structure.core.Catalog": [
+        {
+          "catalog": {
+            "default": true,
+            "name": "JPA_BUDDY",
+            "snapshotId": "de83137"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Column": [
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "corporate_name",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83143",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "cpf_cnpj",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83146",
+            "type": {
+              "columnSize": "14!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "creation_date",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83148",
+            "type": {
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "email",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83147",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83141",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "ie_rg",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83145",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "name",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83142",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "social_name",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#de83139",
+            "snapshotId": "de83144",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Index": [
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "id"
+                }
+              }
+            ]
+            ,
+            "name": "IX_pk_persons",
+            "snapshotId": "de83140",
+            "table": "liquibase.structure.core.Table#de83139",
+            "unique": true
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.PrimaryKey": [
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#de83140",
+            "columns": [
+              "liquibase.structure.core.Column#de83141"
+            ]
+            ,
+            "name": "pk_persons",
+            "snapshotId": "de83149",
+            "table": "liquibase.structure.core.Table#de83139"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Schema": [
+        {
+          "schema": {
+            "catalog": "liquibase.structure.core.Catalog#de83137",
+            "default": true,
+            "snapshotId": "de83138"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Sequence": [
+        {
+          "sequence": {
+            "incrementBy": "50!{java.math.BigInteger}",
+            "name": "persons_seq",
+            "schema": "liquibase.structure.core.Schema#de83138",
+            "snapshotId": "de83150",
+            "startValue": "1!{java.math.BigInteger}"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Table": [
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#de83141",
+              "liquibase.structure.core.Column#de83142",
+              "liquibase.structure.core.Column#de83143",
+              "liquibase.structure.core.Column#de83144",
+              "liquibase.structure.core.Column#de83145",
+              "liquibase.structure.core.Column#de83146",
+              "liquibase.structure.core.Column#de83147",
+              "liquibase.structure.core.Column#de83148"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#de83140"
+            ]
+            ,
+            "name": "persons",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#de83149",
+            "schema": "liquibase.structure.core.Schema#de83138",
+            "snapshotId": "de83139"
+          }
+        }
+      ]
+      
+    },
+    "snapshotControl": {
+      "snapshotControl": {
+        "includedType": [
+          "liquibase.structure.core.Catalog",
+          "liquibase.structure.core.Column",
+          "liquibase.structure.core.ForeignKey",
+          "liquibase.structure.core.Index",
+          "liquibase.structure.core.PrimaryKey",
+          "liquibase.structure.core.Schema",
+          "liquibase.structure.core.Sequence",
+          "liquibase.structure.core.Table",
+          "liquibase.structure.core.UniqueConstraint",
+          "liquibase.structure.core.View"
+        ]
+        
+      }
+    }
+  }
+}
